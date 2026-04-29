@@ -1,0 +1,70 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--gem-blue: #3f6fff;
+	--gem-cyan: #18c6ff;
+	--gem-indigo: #6677ff;
+	--gem-violet: #8d6dff;
+	--gem-pink: #ff72c8;
+	--bg-base: #eef3ff;
+	--text-main: #13233f;
+}
+
+html,
+body,
+#root {
+	width: 100%;
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: "Google Sans", "Product Sans", "Segoe UI", sans-serif;
+	background:
+		radial-gradient(circle at 0% 15%, rgba(116, 148, 255, 0.38), transparent 34%),
+		radial-gradient(circle at 100% 5%, rgba(42, 214, 255, 0.35), transparent 36%),
+		radial-gradient(circle at 88% 92%, rgba(240, 118, 213, 0.25), transparent 39%),
+		radial-gradient(circle at 10% 90%, rgba(136, 111, 255, 0.25), transparent 36%),
+		linear-gradient(165deg, #f6f9ff 0%, #edf2ff 44%, #e9f2ff 100%);
+	color: var(--text-main);
+	position: relative;
+	overflow-x: hidden;
+}
+
+body::before,
+body::after {
+	content: "";
+	position: fixed;
+	pointer-events: none;
+	z-index: -1;
+	filter: blur(24px);
+	animation: geminiFloat 16s ease-in-out infinite alternate;
+}
+
+body::before {
+	width: 320px;
+	height: 320px;
+	left: -70px;
+	top: 90px;
+	background: radial-gradient(circle, rgba(81, 130, 255, 0.36) 0%, rgba(81, 130, 255, 0) 72%);
+}
+
+body::after {
+	width: 360px;
+	height: 360px;
+	right: -90px;
+	bottom: 40px;
+	background: radial-gradient(circle, rgba(28, 205, 255, 0.35) 0%, rgba(28, 205, 255, 0) 74%);
+	animation-delay: 1.8s;
+}
+
+@keyframes geminiFloat {
+	0% {
+		transform: translate3d(0, 0, 0) scale(1);
+	}
+	100% {
+		transform: translate3d(22px, -20px, 0) scale(1.12);
+	}
+}

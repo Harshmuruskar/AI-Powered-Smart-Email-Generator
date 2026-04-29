@@ -1,0 +1,132 @@
+# ==========================================
+# FRONTEND (Node.js/React) - Smart_Email-Assistant FE
+# ==========================================
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+npm-shrinkwrap.json
+
+# Build outputs
+dist/
+dist-ssr/
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
+# BACKEND (Maven/Java) - Smart-Email-Assistant BE
+# ==========================================
+
+# Maven
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Build outputs
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# HELP documentation
+HELP.md
+
+# ==========================================
+# IDE & EDITOR
+# ==========================================
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# IntelliJ IDEA
+.idea/
+.idea_modules/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse / STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim/Neovim
+.vim/
+*.swp
+*.swo
+*~
+.netrwhist
+
+# ==========================================
+# OS SPECIFIC
+# ==========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.app
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+
+# ==========================================
+# MISC
+# ==========================================
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# IDE temp files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS X
+.AppleDouble
+.LSOverride
+
+# Dependencies lock files (optional, uncomment if needed)
+# package-lock.json
+# yarn.lock
